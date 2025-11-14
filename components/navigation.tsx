@@ -45,12 +45,12 @@ export function Navigation() {
               </Link>
             </div>
             <div className="flex items-center gap-2 justify-end md:min-w-[200px]">
-              <a
+              <Link
                 href="/contact-us"
                 className="btn btn-primary hover:opacity-90 transition"
               >
                 {t("contact")}
-              </a>
+              </Link>
 
               <LanguageSwitcher />
 
