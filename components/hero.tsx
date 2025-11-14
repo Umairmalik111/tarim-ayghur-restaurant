@@ -10,12 +10,12 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative md:flex items-center justify-center overflow-hidden relative lg:px-12 bg-[#F5E3BF]"
+      className="relative md:flex items-center justify-center relative lg:px-12 bg-[#F5E3BF]"
     >
-      <div style={{zIndex: '99'}} className="absolute lg:block hidden right-0 top-0 h-full">
+      <div style={{zIndex: '99'}} className="absolute lg:block hidden banner-borders right-0 top-0 h-full">
         <img className="h-full" src={'/image/banner-layer.png'} />
       </div>
-      <div style={{zIndex: '99'}} className="absolute lg:block hidden left-0 top-0 h-full transform rotate-180">
+      <div style={{zIndex: '99'}} className="absolute lg:block hidden banner-borders left-0 top-0 h-full transform rotate-180">
         <img className="h-full" src={'/image/banner-layer.png'} />
       </div>
       <div className="left-col 2xl:w-8/12 md:6/12 md:text-start text-center py-7 px-4">

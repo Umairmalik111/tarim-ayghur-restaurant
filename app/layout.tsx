@@ -46,7 +46,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet" />
 
       </head>
-      <body className={`font-sans antialiased`}>
+      <body className={`font-sans antialiased mt-[92px]`}>
         <LanguageProvider>
           <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
             {children}
