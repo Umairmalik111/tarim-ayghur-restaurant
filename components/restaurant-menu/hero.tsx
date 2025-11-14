@@ -1,16 +1,17 @@
 "use client"
 
 import { useLanguage } from "@/lib/language-context"
-import { getTranslation } from "@/lib/translations"
+import { translations } from "@/lib/translations"
 
 export function Hero() {
+  
   const { language } = useLanguage()
-  const t = (key: string) => getTranslation(language, key as any)
+  const t = translations[language] // ✅ correct reference
 
   return (
     <section
       id="home"
-      className="relative md:flex items-center justify-center overflow-hidden aspect-16/6 !bg-cover relative pt-[94px] lg:px-12"
+      className="relative flex items-center justify-center overflow-hidden md:aspect-16/6 aspect-16/9 !bg-cover relative mt-[92px] lg:px-12"
       style={{background: 'url(/image/resturant/banner.png) center center no-repeat'}}
     >
       <div className="bg-[#66282C]/60 absolute inset-0 w-full h-full z-1"></div>
@@ -21,8 +22,8 @@ export function Hero() {
         <img className="h-full" src={'/image/banner-layer.png'} />
       </div>
       <div className="relative z-2">
-        <h1 className="aboreto-text 2xl:text-[60px] xl:text-[50px] text-[38px] text-secondary leading-[1.1] text-balance whitespace-pre-line">
-          Restaurant Menu
+        <h1 className="aboreto-text 2xl:text-[60px] xl:text-[50px] text-[34px] text-secondary leading-[1.1] text-balance whitespace-pre-line">
+          {t.RestaurantMenuText}
         </h1>
       </div>
     </section>

@@ -110,7 +110,7 @@ export function Reservation() {
                   onChange={handleChange}
                   required
                   className="w-full border border-white bg-white/10 py-[12px] px-[20px] rounded-[10px]"
-                  placeholder="Phone Number"
+                  placeholder={t("phoneLabel")}
                 />
               </div>
               <div className="relative">
@@ -121,11 +121,11 @@ export function Reservation() {
                   onChange={handleChange}
                   className="w-full border border-white bg-white/10 py-[12px] px-[20px] rounded-[10px] appearance-none"
                 >
-                  <option>1 Person</option>
-                  <option>2 Person</option>
-                  <option>3 Person</option>
-                  <option>4 Person</option>
-                  <option>5+ Person</option>
+                  <option>1 {t("PersonWord")}</option>
+                  <option>2 {t("PersonWord")}</option>
+                  <option>3 {t("PersonWord")}</option>
+                  <option>4 {t("PersonWord")}</option>
+                  <option>5+ {t("PersonWord")}</option>
                 </select>
                   <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2">
                     <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -147,7 +147,7 @@ export function Reservation() {
                   timeIntervals={15} // 15-minute steps
                   timeCaption="Time"
                   dateFormat="h:mm aa"
-                  placeholderText="Select time"
+                  placeholderText={t("selectTime")}
                   className="w-full border border-white bg-white/10 py-[12px] px-[20px] rounded-[10px]"
                 />
               </div>
