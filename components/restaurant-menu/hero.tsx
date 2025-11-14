@@ -11,7 +11,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative flex items-center justify-center overflow-hidden md:aspect-16/6 aspect-16/9 !bg-cover relative mt-[92px] lg:px-12"
+      className="relative flex items-center justify-center overflow-hidden md:aspect-16/6 aspect-16/9 !bg-cover relative lg:px-12"
       style={{background: 'url(/image/resturant/banner.png) center center no-repeat'}}
     >
       <div className="bg-[#66282C]/60 absolute inset-0 w-full h-full z-1"></div>

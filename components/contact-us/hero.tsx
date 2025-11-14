@@ -11,7 +11,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative flex justify-center md:items-start overflow-hidden md:aspect-16/6 aspect-16/9 !bg-cover relative mt-[92px] lg:px-12"
+      className="relative flex justify-center md:items-start overflow-hidden md:aspect-16/6 aspect-16/9 !bg-cover relative lg:px-12"
       style={{background: 'url(/image/contact-us.png) center center no-repeat'}}
     >
       <div style={{zIndex: '99'}} className="absolute lg:block hidden right-0 top-0 h-full">

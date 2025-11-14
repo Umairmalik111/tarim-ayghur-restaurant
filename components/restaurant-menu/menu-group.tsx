@@ -82,8 +82,8 @@ export default function MenuGroup() {
                                   </svg>
                                 </span>
                               {/* )} */}
+                              <div className="dark:text-white md:block hidden flex-1" style={{borderTop: '1px dashed'}}></div>
                             </h5>
-                            <div className="dark:text-white md:block hidden" style={{borderTop: '1px dashed'}}></div>
                           </div>
                           <p className="text-xs dark:text-white">{item.description}</p>
                         </div>
